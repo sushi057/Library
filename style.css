@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
 
 :root{
-    --primary: #f3e8ff;
+    --primary: #581c87;
     --secondary: #a855f7;
-    --background: #d8b4fe;
-    --font: #5b21b6;
+    --utility: #d8b4fe;
+    --background: #faf5ff;
 }
 
 *{
@@ -14,10 +14,12 @@
     font-family: 'Heebp', sans-serif;
 }
 
+/* Header Section */
+
 .header{
-    border: 1px solid black;
     height: 6rem;
     padding: 24px;
+    /* box-shadow: 0 41px 20px -20px gray); */
 }
 
 .header h1{
@@ -26,4 +28,30 @@
 
 .header h1 span{
     color: var(--font);
+}
+
+/* Main Section */
+
+.main{
+    /* border: 1px solid black; */
+    padding: 32px;
+    background-color: var(--background);
+    height: 80vh;
+}
+
+.add-button{
+    text-align: center;
+    background-color: var(--primary);
+    width: min(12rem);
+    padding: 12px;
+    border-radius: 25px;
+    color: var(--background);
+    font-weight: bold;
+    margin: 0px auto 24px;
+}
+
+/* Footer Section */
+
+.footer{   
+    text-align: center;
 }
