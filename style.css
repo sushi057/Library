@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
 
 :root{
-    --primary: #5b21b6;
+    --primary: #f3e8ff;
     --secondary: #a855f7;
     --background: #d8b4fe;
-    --font: #f3e8ff;
+    --font: #5b21b6;
 }
 
 *{
@@ -14,3 +14,16 @@
     font-family: 'Heebp', sans-serif;
 }
 
+.header{
+    border: 1px solid black;
+    height: 6rem;
+    padding: 24px;
+}
+
+.header h1{
+    font-size: 42px;
+}
+
+.header h1 span{
+    color: var(--font);
+}
