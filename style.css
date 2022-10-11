@@ -37,17 +37,17 @@
     /* border: 1px solid black; */
     padding: 32px;
     background-color: var(--background);
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .add-button{
     text-align: center;
     background-color: var(--primary);
-    width: min(12rem);
-    padding: 12px;
+    width: min(14rem);
+    padding: 18px;
     border-radius: 25px;
     color: var(--background);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin: 0px auto 24px;
 }
@@ -56,7 +56,7 @@
     /* border: 1px solid black; */
     border-radius: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 48px;
     padding: 48px 320px;
 }
@@ -66,6 +66,31 @@
     background-color: white;
     border-radius: 24px;
     padding: 42px;
+}
+
+.card *{
+    margin-bottom: 16px;
+}
+
+.card h2{
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+.read, .remove{
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 24px auto;
+    padding: 12px 42px;
+    background-color: var(--background);
+}
+
+.read{
+    background-color: var(--utility);
+    margin-top: 18px;
 }
 
 /* Footer Section */
