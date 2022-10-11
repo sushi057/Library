@@ -14,11 +14,15 @@
     font-family: 'Heebp', sans-serif;
 }
 
+body{
+    background-color: var(--background);
+}
 /* Header Section */
 
 .header{
     height: 6rem;
     padding: 24px;
+    background-color: white;
     /* box-shadow: 0 41px 20px -20px gray); */
 }
 
@@ -37,7 +41,7 @@
     /* border: 1px solid black; */
     padding: 32px;
     background-color: var(--background);
-    /* height: 80vh; */
+    /* height: 85vh; */
 }
 
 .add-button{
@@ -56,9 +60,10 @@
     /* border: 1px solid black; */
     border-radius: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 48px;
     padding: 48px 320px;
+    overflow: hidden;
 }
 
 .card{
@@ -96,8 +101,14 @@
 /* Footer Section */
 
 .footer{   
-    text-align: center;
-    font-size: 1.8rem;
-    letter-spacing: 8px;
-    background-color: var(--background);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
 }
