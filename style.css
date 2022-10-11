@@ -24,10 +24,11 @@
 
 .header h1{
     font-size: 42px;
+    margin-left: 180px;
 }
 
 .header h1 span{
-    color: var(--font);
+    color: var(--primary);
 }
 
 /* Main Section */
@@ -46,8 +47,25 @@
     padding: 12px;
     border-radius: 25px;
     color: var(--background);
+    font-size: 1.15rem;
     font-weight: bold;
     margin: 0px auto 24px;
+}
+
+.manga-cards{
+    /* border: 1px solid black; */
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 48px;
+    padding: 48px 320px;
+}
+
+.card{
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 24px;
+    padding: 42px;
 }
 
 /* Footer Section */
