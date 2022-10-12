@@ -2,6 +2,7 @@ const dialog = document.querySelector('.add-book');
 const openDialog = document.querySelector('.add-button');
 const closeDialog = document.querySelector('#close-button');
 const addButton = document.querySelector('button');
+const readManga = document.querySelectorAll('.read');
 let removeManga = document.querySelectorAll('.remove');
 
 //Database
@@ -56,13 +57,17 @@ function addMangaToLibrary(){
     removeManga = document.querySelectorAll('.remove');
     console.log(removeManga);
 
+    removeMangaFromLibrary();
+}
+
+function removeMangaFromLibrary(){
     removeManga.forEach((button) => {
         button.addEventListener('click', () => {
             button.parentNode.remove();
-        })
-});
-
+        });
+    });
 }
+removeMangaFromLibrary();
 
 // Dialog Events
 openDialog.addEventListener('click', () => {
@@ -80,6 +85,18 @@ addButton.addEventListener('click', () => {
     console.log(myLibrary);
 })
 
+readManga.forEach((button) => {
+    button.addEventListener('click', () => {
+        if(button.textContent == 'Read'){
+            button.textContent = 'Not Read';
+            button.style.backgroundColor = '#a855f7';
+        }
+        else{
+            button.textContent = 'Read';
+            button.style.backgroundColor = '#d8b4fe';
+        }
+    })
+})
 
 //OUTLINE
 // 1. Create a function
