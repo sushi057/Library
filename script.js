@@ -20,11 +20,39 @@ function addMangaToLibrary(){
     const pages = document.querySelector('#pages').value;
     const state = document.querySelector('#state').checked;
 
-    item = manga(title, author, pages, state);
+    const mangaCard = document.querySelector('.manga-cards');
+
+    const card = document.createElement('div');
+    const readButton = document.createElement('div');
+    const removeButton = document.createElement('div');
+    const newTitle = document.createElement('h2');
+    const newAuthor = document.createElement('h3');
+    const newPages = document.createElement('h3');
+
+    card.classList = 'card';
+    readButton.classList = 'read';
+    removeButton.classList = 'remove';
+
+    newTitle.textContent = title;
+    newAuthor.textContent = author;
+    newPages.textContent = 'Pages: ' + pages;
+
+    if(!state){
+        readButton.textContent = "Not Read";
+    }
+    else{
+        readButton.textContent = "Read";
+    }
+    removeButton.textContent = 'Remove';
+
+    card.append(newTitle, newAuthor, newPages, readButton, removeButton)
+    mangaCard.appendChild(card);
+
+    const item = new manga(title, author, pages, state);
     myLibrary.push(item);
     console.log(item);
-}
 
+}
 
 
 // Dialog Events
