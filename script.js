@@ -2,7 +2,7 @@ const dialog = document.querySelector('.add-book');
 const openDialog = document.querySelector('.add-button');
 const closeDialog = document.querySelector('#close-button');
 const addButton = document.querySelector('button');
-const readManga = document.querySelectorAll('.read');
+let readManga = document.querySelectorAll('.read');
 let removeManga = document.querySelectorAll('.remove');
 
 //Database
@@ -55,9 +55,11 @@ function addMangaToLibrary(){
     console.log(item);
 
     removeManga = document.querySelectorAll('.remove');
+    readManga = document.querySelectorAll('.read');
     console.log(removeManga);
 
     removeMangaFromLibrary();
+    readState();
 }
 
 function removeMangaFromLibrary(){
@@ -67,7 +69,23 @@ function removeMangaFromLibrary(){
         });
     });
 }
-removeMangaFromLibrary();
+
+
+function readState(){
+    readManga.forEach((button) => {
+        button.addEventListener('click', () => {
+            if(button.textContent == 'Read'){
+                button.textContent = 'Not Read';
+                button.style.backgroundColor = '#a855f7';
+            }
+            else{
+                button.textContent = 'Read';
+                button.style.backgroundColor = '#d8b4fe';
+            }
+        })
+    })
+    
+}
 
 // Dialog Events
 openDialog.addEventListener('click', () => {
@@ -85,23 +103,6 @@ addButton.addEventListener('click', () => {
     console.log(myLibrary);
 })
 
-readManga.forEach((button) => {
-    button.addEventListener('click', () => {
-        if(button.textContent == 'Read'){
-            button.textContent = 'Not Read';
-            button.style.backgroundColor = '#a855f7';
-        }
-        else{
-            button.textContent = 'Read';
-            button.style.backgroundColor = '#d8b4fe';
-        }
-    })
-})
+readState();
+removeMangaFromLibrary();
 
-//OUTLINE
-// 1. Create a function
-// 2. take data from dialog
-// 3. construct data
-// 4. add object to array
-// 5. update it to manga-cards
-// 6. 
