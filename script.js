@@ -56,17 +56,11 @@ function addMangaToLibrary(){
     removeManga = document.querySelectorAll('.remove');
     console.log(removeManga);
 
-
     removeManga.forEach((button) => {
         button.addEventListener('click', () => {
-            console.log('geda');
-            mangaCard.removeChild(card);
+            button.parentNode.remove();
         })
 });
-
-}
-
-function removeMangaFromLibrary(){
 
 }
 
