@@ -2,7 +2,7 @@ const dialog = document.querySelector('.add-book');
 const openDialog = document.querySelector('.add-button');
 const closeDialog = document.querySelector('#close-button');
 const addButton = document.querySelector('button');
-const removeButton = document.querySelectorAll('.remove');
+let removeManga = document.querySelectorAll('.remove');
 
 //Database
 
@@ -53,12 +53,22 @@ function addMangaToLibrary(){
     myLibrary.push(item);
     console.log(item);
 
+    removeManga = document.querySelectorAll('.remove');
+    console.log(removeManga);
+
+
+    removeManga.forEach((button) => {
+        button.addEventListener('click', () => {
+            console.log('geda');
+            mangaCard.removeChild(card);
+        })
+});
+
 }
 
 function removeMangaFromLibrary(){
 
 }
-
 
 // Dialog Events
 openDialog.addEventListener('click', () => {
@@ -75,13 +85,6 @@ addButton.addEventListener('click', () => {
     dialog.close();
     console.log(myLibrary);
 })
-
-removeButton.forEach((button) => {
-    button.addEventListener('click', () => {
-        console.log('geda');
-        removeMangaFromLibrary();
-    })
-});
 
 
 //OUTLINE
