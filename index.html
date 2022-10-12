@@ -38,22 +38,25 @@
         </div>
 
         <dialog class="add-book">
-            <div class="top">
-                <h2>Add Manga</h2>
-                <p id="close-button">&times;</p>
-            </div>
-          
-            <input type="text" id="name" name="manga-name" placeholder="Name" required>
-
-            <input type="text" id="author" name="author" placeholder="Author" required>
-
-            <input type="text" id="pages" name="pages" placeholder="No of pages">
-
-            <button type="button">Add</button>
+            <form action="">
+                <div class="top">
+                    <h2>Add Manga</h2>
+                    <p id="close-button">&times;</p>
+                </div>
+        
+                <input type="text" id="name" name="manga-name" placeholder="Name" required>
+                <input type="text" id="author" name="author" placeholder="Author" required>
+                <input type="text" id="pages" name="pages" placeholder="No of pages">
+                <div class="manga-state">
+                    <label for="state">Have you read this book?</label>
+                    <input type="checkbox" id="state" name="read or not">
+                </div>
+                <button type="button">Add</button>
+            </form>
         </dialog>
 
         <div class="footer">
-            <p>made by sushi</p>
+            <!-- <p>made by sushi</p> -->
         </div>
 
         <div id="overlay"></div>

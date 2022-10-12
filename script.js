@@ -27,3 +27,18 @@ function manga(name, author, pages, state){
     this.pages = pages
     this.state = state
 }
+
+function addMangaToLibrary(){
+    item = manga()
+    myLibrary.push(item);
+}
+
+
+
+//OUTLINE
+// 1. Create a function
+// 2. 
+// 
+// 
+// 
+// 
