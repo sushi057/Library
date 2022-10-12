@@ -9,6 +9,7 @@ openDialog.addEventListener('click', () => {
 
 closeDialog.addEventListener('click', () => {
     dialog.close();
+    
 })
 
 addButton.addEventListener('click', () => {
