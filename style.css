@@ -188,8 +188,13 @@ input{
     margin-bottom: 18px;
 }
 
+input[type='checkbox']{
+    height: 24px;
+    width: 24px;
+}
+
 button{
-    background-color: var(--utility);
+    background-color: var(--primary);
     border: 0;
     padding: 12px;
     border-radius: 24px;
@@ -198,4 +203,5 @@ button{
     margin: auto 36px;
     margin-top: 24px;
     cursor: pointer;
+    color: white;
 }
