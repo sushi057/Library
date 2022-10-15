@@ -9,11 +9,20 @@ let removeManga = document.querySelectorAll('.remove');
 
 let myLibrary = [];
 
-function manga(name, author, pages, state){
-    this.name = name
-    this.author = author
-    this.pages = pages
-    this.state = state
+// function manga(name, author, pages, state){
+//     this.name = name
+//     this.author = author
+//     this.pages = pages
+//     this.state = state
+// }
+
+class manga {
+    constructor(name, author, pages, state){
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.state = state;
+    }
 }
 
 function addMangaToLibrary(){
