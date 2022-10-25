@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png" />
     <title>mmmanga</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1><span>mmm</span>anga</h1>
-            <img src="./images/profile.png" alt="profile_icon">
-        </div>
+      <div class="header">
+        <h1><span>mmm</span>anga</h1>
+        <img src="./images/profile.png" alt="profile_icon" />
+      </div>
 
-        <div class="main">
-            <div class="add-button">+ Add manga</div>
-            <div class="manga-cards">
-                <div class="card">
-                    <h2>Berserk</h2>
-                    <h3>Kentaro Miura</h3>
-                    <h3>Pages: 3460</h3>
-                    <div class="read">Read</div>
-                    <div class="remove">Remove</div>
-                </div>
-                <div class="card">
-                    <h2>Three Days of Happiness</h2>
-                    <h3>Sugaru Miaki</h3>
-                    <h3>Pages: <span>290</span></h3>
-                    <div class="read">Read</div>
-                    <div class="remove">Remove</div>
-                </div>
-                
-            </div>
+      <div class="main">
+        <div class="add-button">+ Add manga</div>
+        <div class="manga-cards">
+          <div class="card">
+            <h2>Berserk</h2>
+            <h3>Kentaro Miura</h3>
+            <h3>Pages: 3460</h3>
+            <div class="read">Read</div>
+            <div class="remove">Remove</div>
+          </div>
+          <div class="card">
+            <h2>Three Days of Happiness</h2>
+            <h3>Sugaru Miaki</h3>
+            <h3>Pages: <span>290</span></h3>
+            <div class="read">Read</div>
+            <div class="remove">Remove</div>
+          </div>
         </div>
+      </div>
 
-        <dialog class="add-book">
-            <form action="">
-                <div class="top">
-                    <h2>Add Manga</h2>
-                    <p id="close-button">&times;</p>
-                </div>
-        
-                <input type="text" id="name" name="manga-name" placeholder="Name" required>
-                <input type="text" id="author" name="author" placeholder="Author" required>
-                <input type="text" id="pages" name="pages" placeholder="No of pages">
-                <div class="manga-state">
-                    <label for="state">Have you read this book?</label>
-                    <input type="checkbox" id="state" name="read or not">
-                </div>
-                <button type="button">Add</button>
-            </form>
-        </dialog>
-<!-- 
+      <dialog class="add-book">
+        <form action="">
+          <div class="top">
+            <h2>Add Manga</h2>
+            <p id="close-button">&times;</p>
+          </div>
+
+          <input
+            type="text"
+            id="name"
+            name="manga-name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author"
+            required
+          />
+          <input
+            type="text"
+            id="pages"
+            name="pages"
+            placeholder="No of pages"
+          />
+          <div class="manga-state">
+            <label for="state">Have you read this book?</label>
+            <input type="checkbox" id="state" name="read or not" />
+          </div>
+          <button type="button">Add</button>
+        </form>
+      </dialog>
+      <!-- 
         <div class="footer">
             <p>made by sushi</p>
         </div> -->
 
-        <div id="overlay"></div>
+      <div id="overlay"></div>
     </div>
-</body>
+  </body>
 </html>

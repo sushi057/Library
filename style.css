@@ -1,144 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
 
-:root{
-    --primary: #581c87;
-    --secondary: #a855f7;
-    --utility: #d8b4fe;
-    --background: #faf5ff;
+:root {
+  --primary: #581c87;
+  --secondary: #a855f7;
+  --utility: #d8b4fe;
+  --background: #faf5ff;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Heebp', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Heebp", sans-serif;
 }
 
-body{
-    background-color: var(--background);
+body {
+  background-color: var(--background);
 }
 /* Header Section */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    padding: 24px;
-    background-color: white;
-    /* box-shadow: 0 41px 20px -20px gray); */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 24px;
+  background-color: white;
+  /* box-shadow: 0 41px 20px -20px gray); */
 }
 
-.header img{
-    margin-right: 24px;
-    border-radius: 50%;
-    height: 56px;
+.header img {
+  margin-right: 24px;
+  border-radius: 50%;
+  height: 56px;
 }
 
-.header h1{
-    font-size: 42px;
-    margin-left: 180px;
+.header h1 {
+  font-size: 42px;
+  margin-left: 180px;
 }
 
-.header h1 span{
-    color: var(--primary);
+.header h1 span {
+  color: var(--primary);
 }
 
 /* Main Section */
 
-.main{
-    /* border: 1px solid black; */
-    padding: 32px;
-    background-color: var(--background);
-    /* height: 85vh; */
+.main {
+  /* border: 1px solid black; */
+  padding: 32px;
+  background-color: var(--background);
+  /* height: 85vh; */
 }
 
-.add-button{
-    text-align: center;
-    background-color: var(--primary);
-    width: min(14rem);
-    padding: 18px;
-    border-radius: 25px;
-    color: var(--background);
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0px auto 24px;
-    cursor: pointer;
+.add-button {
+  text-align: center;
+  background-color: var(--primary);
+  width: min(14rem);
+  padding: 18px;
+  border-radius: 25px;
+  color: var(--background);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0px auto 24px;
+  cursor: pointer;
 }
 
-.manga-cards{
-    /* border: 1px solid black; */
-    border-radius: 24px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 48px;
-    padding: 48px 320px;
-    overflow: hidden;
+.manga-cards {
+  /* border: 1px solid black; */
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 48px;
+  padding: 48px 320px;
+  overflow: hidden;
 }
 
-.card{
-    /* border: 1px solid black; */
-    background-color: white;
-    border-radius: 24px;
-    padding: 42px;
+.card {
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 24px;
+  padding: 42px;
 }
 
-.card *{
-    margin-bottom: 16px;
+.card * {
+  margin-bottom: 16px;
 }
 
-.card h2{
-    color: var(--primary);
-    font-size: 1.7rem;
-    height: max(60px);
+.card h2 {
+  color: var(--primary);
+  font-size: 1.7rem;
+  height: max(60px);
 }
 
-.read, .remove{
-    text-align: center;
-    /* border: 1px solid black; */
-    border-radius: 18px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 24px auto;
-    padding: 12px 42px;
-    background-color: var(--background);
-    cursor: pointer;
+.read,
+.remove {
+  text-align: center;
+  /* border: 1px solid black; */
+  border-radius: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 24px auto;
+  padding: 12px 42px;
+  background-color: var(--background);
+  cursor: pointer;
 }
 
-.read{
-    background-color: var(--utility);
-    margin-top: 18px;
+.read {
+  background-color: var(--utility);
+  margin-top: 18px;
 }
 
 /* Footer Section */
 
-.footer{   
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 17px;
-    width: 100%;
-    font-size: 1.5rem;
-    letter-spacing: 10px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
 }
-
 
 /* Popup Section */
 
-dialog{
-    /* border: 1px solid black; */
-    border: none;
-    border-radius: 16px;
-    background-color: white;
-    width: min(400px);
-    margin: auto;
-    padding: 28px;
+dialog {
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 16px;
+  background-color: white;
+  width: min(400px);
+  margin: auto;
+  padding: 28px;
 }
 
-dialog::backdrop{
-    background-color: rgba(0 0 0 / .4);
+dialog::backdrop {
+  background-color: rgba(0 0 0 / 0.4);
 }
 
 /* dialog:not([open]){
@@ -146,62 +146,61 @@ dialog::backdrop{
     opacity: 0;
 } */
 
-
-.add-book h2{
-    color: var(--primary);
-    margin-bottom: 24px;
+.add-book h2 {
+  color: var(--primary);
+  margin-bottom: 24px;
 }
 
-.top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.top p{
-    font-size: 32px;
-    font-weight: bold;
-    /* border: 1px solid; */
-    padding: 0px 26px 12px;
-    cursor: pointer;
+.top p {
+  font-size: 32px;
+  font-weight: bold;
+  /* border: 1px solid; */
+  padding: 0px 26px 12px;
+  cursor: pointer;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.manga-state{
-    display: flex;
-    place-content: center;
-    margin: 6px auto;
-    font-size: 16px;
+.manga-state {
+  display: flex;
+  place-content: center;
+  margin: 6px auto;
+  font-size: 16px;
 }
 
-input{
-    border: 0;
-    border-radius: 12px;
-    background-color: var(--background);
-    padding: 12px 16px;
-    font-size: 18px;
-    margin: auto 8px;
-    margin-bottom: 18px;
+input {
+  border: 0;
+  border-radius: 12px;
+  background-color: var(--background);
+  padding: 12px 16px;
+  font-size: 18px;
+  margin: auto 8px;
+  margin-bottom: 18px;
 }
 
-input[type='checkbox']{
-    height: 24px;
-    width: 24px;
+input[type="checkbox"] {
+  height: 24px;
+  width: 24px;
 }
 
-button{
-    background-color: var(--primary);
-    border: 0;
-    padding: 12px;
-    border-radius: 24px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: auto 36px;
-    margin-top: 24px;
-    cursor: pointer;
-    color: white;
+button {
+  background-color: var(--primary);
+  border: 0;
+  padding: 12px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto 36px;
+  margin-top: 24px;
+  cursor: pointer;
+  color: white;
 }
