@@ -1,7 +1,7 @@
 const dialog = document.querySelector(".add-book");
-const openDialog = document.querySelector(".add-button");
+const addButton = document.querySelector(".add-button");
 const closeDialog = document.querySelector("#close-button");
-const addButton = document.querySelector("#submit-button");
+const submitButton = document.querySelector("#sumbit-form");
 const mangaForm = document.querySelector("form");
 let readManga = document.querySelectorAll(".read");
 let removeManga = document.querySelectorAll(".remove");
@@ -23,6 +23,33 @@ function removeMangaFromLibrary() {
   removeManga.forEach((button) => {
     button.addEventListener("click", () => {
       button.parentNode.remove();
+    });
+  });
+}
+
+function formValidation() {
+  const inputName = document.querySelector("#name");
+  const inputAuthoer = document.querySelector("#author");
+  const inputPages = document.querySelector("#pages");
+
+  const inputArrays = [inputName, inputAuthoer, inputPages];
+
+  inputArrays.forEach((element) => {
+    element.addEventListener("input", () => {
+      element.setCustomValidity("");
+      element.checkValidity();
+    });
+  });
+
+  inputArrays.forEach((element) => {
+    element.addEventListener("invalid", () => {
+      if (element.value === "") {
+        element.setCustomValidity("Please enter the fields.");
+        console.log("empty");
+      } else {
+        element.setCustomValidity("Please enter valid input.");
+        console.log("input wrong");
+      }
     });
   });
 }
@@ -82,12 +109,11 @@ function addMangaToLibrary() {
   readManga = document.querySelectorAll(".read");
   console.log(removeManga);
 
-  removeMangaFromLibrary();
   readState();
 }
 
 // Dialog Events
-openDialog.addEventListener("click", () => {
+addButton.addEventListener("click", () => {
   dialog.showModal();
 });
 
@@ -95,11 +121,12 @@ closeDialog.addEventListener("click", () => {
   dialog.close();
 });
 
-addButton.addEventListener("click", () => {
+mangaForm.addEventListener("submit", () => {
+  console.log("submit");
   addMangaToLibrary();
   // dialog.close();
-  mangaForm.reset();
 });
 
+formValidation();
 readState();
 removeMangaFromLibrary();
