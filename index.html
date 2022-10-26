@@ -49,6 +49,7 @@
             name="manga-name"
             placeholder="Name"
             required
+            pattern = "^[a-zA-Z0-9_.-]*$"
           />
           <input
             type="text"
@@ -56,18 +57,20 @@
             name="author"
             placeholder="Author"
             required
+            pattern="[A-Za-z]"
           />
           <input
             type="text"
             id="pages"
             name="pages"
             placeholder="No of pages"
+            required
           />
           <div class="manga-state">
             <label for="state">Have you read this book?</label>
             <input type="checkbox" id="state" name="read or not" />
           </div>
-          <button type="button">Add</button>
+          <input type="submit" value="Add" id="submit-button"></button>
         </form>
       </dialog>
       <!-- 

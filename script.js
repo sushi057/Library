@@ -1,7 +1,7 @@
 const dialog = document.querySelector(".add-book");
 const openDialog = document.querySelector(".add-button");
 const closeDialog = document.querySelector("#close-button");
-const addButton = document.querySelector("button");
+const addButton = document.querySelector("#submit-button");
 const mangaForm = document.querySelector("form");
 let readManga = document.querySelectorAll(".read");
 let removeManga = document.querySelectorAll(".remove");
@@ -97,8 +97,7 @@ closeDialog.addEventListener("click", () => {
 
 addButton.addEventListener("click", () => {
   addMangaToLibrary();
-  dialog.close();
-  console.log(myLibrary);
+  // dialog.close();
   mangaForm.reset();
 });
 
